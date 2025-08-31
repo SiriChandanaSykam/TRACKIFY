@@ -1,0 +1,31 @@
+
+<dialog class="settings-modal" id="logoutDialog">
+    <div class="myDialog" >
+    <div><p>Do you want really want to logout?</p></div>
+    <div class="logoutdiv">
+        <a href="{{url_for('logout')}}"class="delete-btn"> Logout</a>
+    <button onclick="document.getElementById('logoutDialog').style.display='none'" class="sidebutton" style="margin-top: 10px; margin-right: 10px;">Cancel</button>
+
+    </div>
+    </div>
+</dialog>
+
+<dialog id="privacy-popup" class="settings-modal myDialog">
+    <div class="privacy-content">
+      <button type="button" class = "close-btn"onclick="document.getElementById('privacy-popup').style.display='none'" style="float: right; margin-bottom: 10px; padding-left:5px;padding-right:5px;padding-top: 0%;padding-bottom:0px;">
+        <span>&times;</span>
+      </button>
+      <h3 class="priv-h3">Privacy Policy</h3>
+      <p>By using this website, you agree to our privacy policy.</p>
+      <!-- <button class="accept-button" onclick="document.getElementById('privacy-popup').style.display='none'">Accept</button> -->
+      <a class="accept-button" href="{{url_for('privacy_policy')}}" >More Info</a>
+    </div>
+
+
+  </dialog>
+
+
+
+
+
+
